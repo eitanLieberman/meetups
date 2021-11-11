@@ -239,7 +239,8 @@ async function getStaticProps(context) {
         image: selectedMeetup.image,
         description: selectedMeetup.description
       }
-    }
+    },
+    revalidate: 1
   };
 }
 /* harmony default export */ var _meetupId_ = __webpack_exports__["default"] = (MeetupDetails);
